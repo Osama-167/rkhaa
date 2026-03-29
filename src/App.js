@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Tesseract from "tesseract.js";
 import "./App.css";
-
+//import dynamic from "next/dynamic";
+//const Tesseract = dynamic(() => import("tesseract.js"), { ssr: false });
 function normalizeLine(s) {
   return (s || "")
     .replace(/\u200f|\u200e/g, "")
